@@ -1,28 +1,30 @@
 class MouseClass {
     constructor(name) {
-        this.sMouseName = name;
+        this.MouseName = name;
 
-        this.bLeftMouseState = false;
-        this.bRightMouseState = false;
+        this.LeftMouseBtnState = false;
+        this.RightMouseBtnState = false;
+        this.ScrollMouseBtnState = false;
 
-        this.iMousePosX = 0;
-        this.iMousePosY = 0;
+        this.MousePosX = 0;
+        this.MousePosY = 0;
 
-        this.bMouseMoveLeft = false;
-        this.bMouseMoveRight = false;
-        this.bMouseMoveTop = false;
-        this.bMouseMoveBottom = false;
+        this.isMouseMoveLeft = false;
+        this.isMouseMoveRight = false;
+        this.isMouseMoveTop = false;
+        this.isMouseMoveBottom = false;
 
-        this.iScrollValue = 5;
-        this.bScrollWheelUp = false;
-        this.bScrollWheelDown = false;
+        this.ScrollValue = 5;
+        this.ScrollWheelUp = false;
+        this.ScrollWheelDown = false;
         this.mouseEventType = {"mouseup":0, "mousedown":1, "click":2}
     }
 
-    getName() { return this.sMouseName; }
-    getMousePosX() { return this.iMousePosX; } setMousePosX(value) { this.iMousePosX = value; }
-    getMousePosY() { return this.iMousePosY; } setMousePosY(value) { this.iMousePosY = value; }
-    getLMBState() { return this.bLeftMouseState; }
-    getRMBState() { return this.bRightMouseState; }
-    getScrollValue() { return this.iScrollValue; } setScrollValue(value) { this.iScrollValue = value; }
+    getName() { return this.MouseName; }
+    getMousePosX() { return this.MousePosX; } setMousePosX(value) { this.MousePosX = value; }
+    getMousePosY() { return this.MousePosY; } setMousePosY(value) { this.MousePosY = value; }
+    getLMBState() { return this.LeftMouseBtnState; }
+    getRMBState() { return this.RightMouseBtnState; }
+    getScrollState() { return this.ScrollMouseBtnState; }
+    getScrollValue() { return this.ScrollValue; } setScrollValue(value) { this.ScrollValue = value; }
 }
